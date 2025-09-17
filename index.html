@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UptimeGuard - Advanced website monitoring solution with real-time insights and intelligent alerts">
+    <meta name="keywords" content="uptime monitoring, website monitoring, SSL monitoring, performance tracking">
+    <meta name="author" content="UptimeGuard">
+    
+    <title>UptimeGuard - Advanced Website Monitoring Solution</title>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Initializing UptimeGuard...</div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">UptimeGuard</span>
+                </div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#demo" class="nav-link">Live Demo</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="cta-button nav-cta">Start Free Trial</button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">
+                    Monitor Your <span class="gradient-text">Digital Empire</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Advanced uptime monitoring with real-time insights and intelligent alerts
+                </p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="hero-button hero-button-primary">
+                        Start 14-Day Free Trial
+                    </a>
+                    <a href="#demo" class="hero-button hero-button-secondary">
+                        Watch Live Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">99.99%</span>
+                        <span class="hero-stat-label">Uptime SLA</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">50+</span>
+                        <span class="hero-stat-label">Global Locations</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">30s</span>
+                        <span class="hero-stat-label">Check Intervals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="scroll-icon"></div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats" id="stats">
+            <div class="container">
+                <div class="stats-grid" id="statsGrid">
+                    <!-- Stats cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Powerful Monitoring Features</h2>
+                    <p class="section-subtitle">
+                        Everything you need to keep your services running flawlessly
+                    </p>
+                </div>
+                <div class="features-grid" id="featuresGrid">
+                    <!-- Feature cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Demo Section -->
+        <section class="demo" id="demo">
+            <div class="demo-bg-effect"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Real-Time Monitoring Dashboard</h2>
+                    <p class="section-subtitle">
+                        See how UptimeGuard keeps your services in check
+                    </p>
+                </div>
+                <div class="monitor-dashboard" id="monitorDashboard">
+                    <!-- Dashboard will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Choose Your Plan</h2>
+                    <p class="section-subtitle">
+                        Transparent pricing that scales with your needs
+                    </p>
+                </div>
+                <div class="pricing-toggle">
+                    <span class="pricing-label">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="pricingToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="pricing-label">
+                        Yearly <span class="badge">Save 20%</span>
+                    </span>
+                </div>
+                <div class="pricing-grid" id="pricingGrid">
+                    <!-- Pricing cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Get Started?</h2>
+                    <p class="cta-subtitle">
+                        Join thousands of companies that trust UptimeGuard for their monitoring needs
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="cta-button cta-primary">Start Free Trial</button>
+                        <button class="cta-button cta-secondary">Schedule Demo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Video Tutorials</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">GDPR Compliance</a></li>
+                        <li><a href="#">SOC 2 Type II</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UptimeGuard. Built with precision for reliability.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
